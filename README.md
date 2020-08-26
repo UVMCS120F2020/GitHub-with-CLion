@@ -15,7 +15,7 @@ There are certain files that most GitHub repositories have:
     .idea/
     ```
   These two lines in the .gitignore file are very important, especially once you start collaborating on projects. This file will be provided for you in Guided Projects, but you will need to create it for Open-Ended Projects and your Final Project.
-* Source files (those with .cpp and .h extensions) needed to run the project.
+* Source files (those with .cpp and .h extensions) are needed to run the project.
 * In a larger project, you may have enough files to create folders for organization. For example, you may want a folder for all of your source files, one for images, and one for input and/or output data files.
 
 # Creating a repository for a Guided Project
@@ -41,7 +41,7 @@ There are certain files that most GitHub repositories have:
 * Click the green "Create Repository" button.
 * Now follow the directions below to clone the repo into CLion.
 
-# Clone a GitHub repository into CLion
+# Clone a GitHub repository into CLion*
 * Click the green "⤓ Code" button and copy the HTTPS link.
     * Note that if the repository is empty, there will not be a green button and the HTTPS link will already be visible.
 * You may need to install [Git](https://git-scm.com/downloads) on your machine (you should only have to do this once at the beginning of the semester).
@@ -55,6 +55,8 @@ There are certain files that most GitHub repositories have:
     * You may be prompted to enter your GitHub username and password.
 * It will ask you if you want to open the directory. Choose yes.
     * If you already have a project open in CLion, it will ask you if you want to open the project in a new window or this window. This choice is up to you.
+
+\* Note that if you are comfortable cloning a repository via command line, you can do so. If you want to use CLion afterwards, choose "New CMake Project from Sources" and follow the directions.
 
 # Mantra
 * Work on the project. Add/modify files.
@@ -71,7 +73,8 @@ There are certain files that most GitHub repositories have:
     
 # CLion colors
 CLion colors the text of the file names according to their git status:
-* Black means the local file matches the one in the repository.
-* Red means the file exists locally but is not in the repository.
+* Black (in light mode, white in dark mode) means the local file matches the one in the repository.
+* Red means the file exists locally but is not tracked by Git.
 * Green means the file is new and is ready to be pushed to the repository.
 * Blue means the local file is different from the version in the repository (i.e. you made changes to the file that can be committed and pushed to the repository).
+* Yellow means the file is in .gitignore.
